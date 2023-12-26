@@ -24,7 +24,7 @@ const user = {
             validation:(Rule)=>Rule.required(),
         }),
         defineField({
-            name:"iamge",
+            name:"image",
             title:"Image",
             type:"url"
         }),
@@ -32,6 +32,16 @@ const user = {
             name:"password",
             type:"string",
             hidden:true,
+        }),
+        defineField({
+            name:"email",
+            type:"string",
+            title:"Email",
+        }),
+        defineField({
+            name:"emailVerified",
+            type:"date",
+            hidden:true, 
         }),
         defineField({
             name:"about",
